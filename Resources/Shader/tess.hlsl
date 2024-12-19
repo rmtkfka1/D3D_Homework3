@@ -99,9 +99,7 @@ PatchConstOutput MyPatchConstantFunc(InputPatch<VS_OUT, 4> patch, uint patchID :
 HS_OUT HS_Main(InputPatch<VS_OUT, 4> p,uint i : SV_OutputControlPointID,uint patchId : SV_PrimitiveID)
 {
     HS_OUT hout;
-	
     hout.pos = p[i].pos.xyz;
-
     return hout;
 }
 
